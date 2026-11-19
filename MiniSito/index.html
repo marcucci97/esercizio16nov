@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sport News</title>
+	<link href="style.css" rel="stylesheet" /> 
+</head>
+<body>
+
+<!-- Non trovo un modo chiaro per tornare alla home page: in genere si usa il logo...
+I link di pagine non esistenti vanno codificati con <a href="#">Link</a>.
+
+Ogni articolo deve essere corredato di una foto centrata.
+Sistemare la tabella nel footer. -->
+
+<div id="container">
+
+	<div id="head">
+		<img src="logocanva.png" alt="LogoSport" id="Logo" /> 
+	</div>
+		
+	<!-- container centrale -->
+	<div class="halfway">
+		
+	<!-- container di sinistra (centrale) -->
+		<div class="halfbox">
+		<div id="menu">
+			<ul>
+				<li><a href="pallavolo.html">Pallavolo</a></li>
+				<li><a href="#">Calcio</a></li>
+				<li><a href="#">Tennis</a></li>
+				<li><a href="#">Basket</a></li>
+				<li><a href="#">Nuoto</a></li>
+				<li><a href="#">Formula 1</a></li>
+			</ul>
+			
+			<select id="menu-mobile">
+                <option>Seleziona la categoria</option>
+                <option>Pallavolo</option>
+                <option>Calcio</option>
+                <option>Tennis</option>
+                <option>Basket</option>
+                <option>Nuoto</option>
+                <option>Formula 1</option>
+            </select>
+			
+		</div>
+		</div>
+		
+	<!-- container del centro -->
+		<div class="halfbox">
+		<div id="article">
+			<h1>Calcio: Harry Kane vince il pallone d'oro del 2026</h1>
+			<p>A 33 anni, Harry Kane ha spezzato l'ultimo tabù della sua straordinaria carriera, conquistando il Pallone d’Oro 2026. La settantesima edizione del prestigioso premio istituito da France Football ha vissuto una notte di assoluta storicità: per la prima volta l'evento ha abbandonato la tradizionale cornice di Parigi per sbarcare al London Palladium di Londra.</p> 
+		    <img id="img" src="kane.jpg" alt="Immagine">
+			<p>Un omaggio romantico ai 70 anni dal primo storico trionfo di Sir Stanley Matthews. Proprio davanti al proprio pubblico, il capitano dell'Inghilterra ha alzato al cielo il trofeo, superando una concorrenza spietata guidata dal fuoriclasse del Real Madrid Kylian Mbappé (secondo) e dal giovanissimo fenomeno del Barcellona Lamine Yamal (terzo)</p>
+		</div>
+		</div>
+		
+	<!-- container di destra -->
+		<div class="halfbox">
+		<div id="menu2">
+			<ul>
+				<li><a href="tennis.html">Tennis: Jannik Sinner trionfa agli Australian Open e conquista il titolo!</a></li>
+				<li><a href="#">Pallavolo: Italia campione del mondo: una vittoria che entra nella storia!</a></li>
+				<li><a href="#">Formula 1: Ferrari, Leclerc punta al titolo mondiale nella nuova stagione!</a></li>
+				<li><a href="#">Basket: LeBron James conquista il terzo posto all-time per assist!</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<p id="testo">
+			Scrivici: <a href="#">sportnewseueu@yahoo.com</a><br />
+			Telefono: <a href="#">+39-02 885 35634</a>
+		</p>
+	<div class="table">
+		<tbody>
+			<tr>
+				<th>16/</th>
+				<th>11/</th>
+				<th>2026</th>
+			</tr>
+		</tbody>
+	</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+<!--  • Allineamento preciso. Sia #container che .footer hanno impostato width: 90% e max-width: 1200px con margin: auto. Questo garantisce che il footer abbia esattamente la stessa larghezza e proporzione dell'intestazione (#head).
+• Effetto griglia/tabella. Usando display: flex e align-items: stretch su .halfway, le tre colonne (menu, article, menu2) avranno sempre la stessa altezza, indipendentemente da quanto è lungo il testo dell'articolo. I bordi laterali (border-left e border-right) separano visivamente le celle.
+• Proporzioni delle colonne. Lo spazio orizzontale è diviso in 20% per il menu di navigazione a sinistra, 55% per l'articolo principale al centro e 25% per le notizie extra a destra.
+Nota sul tuo HTML: Nel footer hai inserito i tag <tbody>, <tr> e <th> dentro un <div class="table"> senza aprire il tag <table>. Il CSS qui sopra funziona comunque benissimo, ma per avere un codice HTML valido al 100% ti consiglio di sostituire <div class="table"> con <table class="table"> (e chiuderlo con </table>).
+Vorresti anche aggiungere una regola responsive (@media) per fare in modo che su smartphone le 3 colonne si impilino una sotto l'altra invece di restare affiancate?-->
+
+
+
+
+
+
+
+
+
